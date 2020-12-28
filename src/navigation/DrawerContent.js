@@ -20,15 +20,9 @@ export default function DrawerContent(props) {
     )
   }
 
-
-  const onToggleSwitchForTheme = () => {
-    seIsDarkTheme(!isDarkTheme);
-  }
-  // console.log('Drawer content props:', props);
-
   return (
     <DrawerContentScrollView>
-      <Drawer.Section>
+      <Drawer.Section title="Menu">
         <Drawer.Item 
           label="Home"
           active={active  === "home"}
